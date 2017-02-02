@@ -15,7 +15,7 @@
 		mainHead.classList.remove(switchClass);
 		
 		switchClass = this.id;
-		console.log(this);
+		//console.log(this);
 		
 		mainHead.classList.add(this.id);
 		
@@ -40,5 +40,8 @@ $(function() {
     $('.page .nav').click(function() {
         $(this).next().toggle();
     });
+	
+	//Instead of giving a variable to each page, I can just simply use jquery, otherwise, 
+	//I would've needed to use a for loop to display each page, also, with this layout, I don't think it's applicable to us ajax to switch between pages
 
 });
